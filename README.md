@@ -2,7 +2,7 @@ Description:
 
 This is a simple Full Stack Star Wars application specific to star ships.
 This will seed the data retrieved for Star Wars Star Ships from the SWAPI api (https://swapi.dev/api/starships/)
-Then a basic CRUD api for accessing that newly created database which also includes Swagger access for the api.
+Then a basic CRUD minimal api for accessing that newly created database which also includes Swagger access for the api.
 Also a basic SPA for accessing the CRUD functionality.
 
 How to Run Locally:
