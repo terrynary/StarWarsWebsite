@@ -79,7 +79,6 @@ function StarShipTable() {
     const processRowUpdate = (newRow) => {
       const updatedRow = { ...newRow, isNew: false };
       const found = rows.find((row) => row.id === newRow.id);
-      console.log(found);
       if(found.name === "") {
         delete newRow.id;
         createStarShip(newRow);
@@ -100,7 +99,11 @@ function StarShipTable() {
     }, []);
 
     const columns = [
-        { field: 'name', headerName: 'Name', width: 220, editable: true },
+        { field: 'name', 
+          headerName: 'Name', 
+          width: 220, 
+          editable: true 
+        },
         {
           field: 'model',
           headerName: 'Model',
@@ -209,10 +212,6 @@ function StarShipTable() {
         <div>
             <h1 id="tableLabel">Star Wars Star Ships</h1>
             <h2>Lucky Star Ship is: {luckyStarShip.name}</h2>
-            <img
-            src = 'http://static.wikia.nocookie.net/starwars/images/c/c7/Aa9coruscantfreighter.jpg/revision/latest?cb=20091201131352'
-            alt = 'placeholder'
-            />
             {contents}
         </div>
     );
