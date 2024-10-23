@@ -1,0 +1,6 @@
+@StarWarsWebsite.Server_HostAddress = http://localhost:5004
+
+GET {{StarWarsWebsite.Server_HostAddress}}/starship
+Accept: application/json
+
+###
